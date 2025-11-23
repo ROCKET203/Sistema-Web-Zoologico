@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="#">ZooData</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" datatarget="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" arialabel="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<div class="navbar-nav">
+@if(activo == 1){
+<a class="nav-item nav-link active" href="zoologico">Zoologico</a>
+}@else{
+<a class="nav-item nav-link" href="zoologico">Zoologico</a>
+}
+@if(activo == 2){
+<a class="nav-item nav-link active" href="animal">Animales</a>
+}@else{
+<a class="nav-item nav-link" href="animal">Animales</a>
+}
+@if(activo == 3){
+<a class="nav-item nav-link active" href="zoologico">Especies</a>
+}@else{
+<a class="nav-item nav-link"  href="especie">especie</a>
+}
+</div>
+</div>
+</nav>

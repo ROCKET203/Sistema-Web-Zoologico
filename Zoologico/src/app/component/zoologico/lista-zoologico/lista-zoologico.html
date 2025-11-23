@@ -1,0 +1,25 @@
+<div>
+<h4>Lista de Zoologicos</h4>
+<table class="table table-hovered table-stripped">
+<thead>
+<th>Id</th>
+<th>nombre</th>
+<th>tamaño (hectáreas)</th>
+<th>ciudad</th>
+<th>pais</th>
+<th>presupuesto</th>
+</thead>
+<tbody>
+@for(datos of data;track datos){
+<tr>
+<td>{{datos.id}}</td>
+<td>{{datos.nombre}}</td>
+<td>{{datos.tamano}}</td>
+<td>{{datos.ciudad}}</td>
+<td>{{datos.pais}}</td>
+<td>{{datos.presupuesto}}</td>
+</tr>
+}
+</tbody>
+</table>
+</div>

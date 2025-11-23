@@ -1,0 +1,27 @@
+<div>
+  <h4>Lista de animales</h4>
+  <table class="table table-hovered table-stripped">
+    <thead>
+      <th>Id</th>
+      <th>identificación </th>
+      <th>idespecie</th>
+      <th>sexo</th>
+      <th>nacimiento</th>
+      <th>pais</th>
+      <th>id zoologico </th>
+    </thead>
+    <tbody>
+      @for(datos of data;track datos){
+      <tr>
+        <td>{{ datos.id }}</td>
+        <td>{{ datos.identificacion }}</td>
+        <td>{{ datos.id_especie }}</td>
+        <td>{{ datos.sexo }}</td>
+         <td>{{ datos.nacimiento }}</td>
+        <td>{{ datos.nacimiento }}</td>
+         <td>{{ datos.nacimiento }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
