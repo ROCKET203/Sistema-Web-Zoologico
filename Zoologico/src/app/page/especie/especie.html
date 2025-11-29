@@ -1,1 +1,18 @@
-oy
+<app-menu [activo]="1"></app-menu>
+
+<div class="container">
+<hr>
+@if(lista){
+<div class="d-flex justify-content-end">
+<button class="btn btn-success" (click)="mostrar()">Nuevo</button>
+</div>
+<hr>
+<app-lista-especie></app-lista-especie>
+}@else{
+<div class="d-flex justify-content-start">
+<button class="btn btn-primary" (click)="mostrar()">Regresar</button>
+</div>
+<hr>
+<app-form-especie></app-form-especie>
+}
+</div>

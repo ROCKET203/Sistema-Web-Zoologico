@@ -25,4 +25,13 @@ return this.http.get(this.apiUrl + "animales").pipe(res=>res);
 }
 
 
+  getespecies():Observable<any>{
+
+    
+return this.http.get(this.apiUrl + "especies").pipe(res=>res);
 }
+
+
+}
+
+

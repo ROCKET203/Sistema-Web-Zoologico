@@ -9,6 +9,7 @@
       <th>nacimiento</th>
       <th>pais</th>
       <th>id zoologico </th>
+       <th>Acción </th>
     </thead>
     <tbody>
       @for(datos of data;track datos){
@@ -20,6 +21,7 @@
          <td>{{ datos.nacimiento }}</td>
         <td>{{ datos.nacimiento }}</td>
          <td>{{ datos.nacimiento }}</td>
+         <td><button class="btn btn-warning">Traslado</button></td>
       </tr>
       }
     </tbody>
