@@ -1,1 +1,43 @@
-<p>form-especie works!</p>
+<div>
+<h4>Nueva Especie</h4>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">id</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="id" placeholder="id">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">nombre_vulgar</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="nombre_vulgar" placeholder="nombre_vulgar">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">nombre_cientifico</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="nombre_cientifico" placeholder="nombre_cientifico">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">familia</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="familia" placeholder="familia">
+</div>
+</div>  
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">estado</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="estado" placeholder="estado">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">Base:</label>
+<div class="col-sm-11">
+<select [(ngModel)]="base" class="form-control">
+@for(bas of bases; track bas){
+<option value="{{bas.id}}">{{bas.nombre}}</option>
+}
+</select>
+</div>
+</div>
+<button class="btn btn-success" (click)="guardar()">Guardar</button>

@@ -1,1 +1,49 @@
-<p>form-zoologico works!</p>
+<div>
+<h4>Nuevo Zoologico</h4>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">id</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="id" placeholder="id">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">nombre</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="nombre" placeholder="nombre_vulgar">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">tamano</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="tamano" placeholder="tamano">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">ciudad</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="ciudad" placeholder="ciudad">
+</div>
+</div>  
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">pais</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="pais" placeholder="pais">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">presupuesto</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="presupuesto" placeholder="presupuesto">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">Base:</label>
+<div class="col-sm-11">
+<select [(ngModel)]="base" class="form-control">
+@for(bas of bases; track bas){
+<option value="{{bas.id}}">{{bas.nombre}}</option>
+}
+</select>
+</div>
+</div>
+<button class="btn btn-success" (click)="guardar()">Guardar</button>

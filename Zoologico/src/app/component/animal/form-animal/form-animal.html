@@ -1,1 +1,48 @@
-<p>form-animal works!</p>
+<div>
+<h4>Nuevo Animal</h4>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">id</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="id" placeholder="id">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">id_especie</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="id_especie" placeholder="id_especie">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">sexo</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="sexo" placeholder="sexo">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">nacimiento</label>
+<div class="col-sm-11"><input type="date" class="form-control-plaintext" [(ngModel)]="nacimiento" placeholder="nacimiento"></div>
+</div>
+</div>  
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">pais</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="pais" placeholder="pais">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">id_zoologico</label>
+<div class="col-sm-11">
+<input type="text" class="form-control-plaintext" [(ngModel)]="id_zoologico" placeholder="id_zoologico">
+</div>
+</div>
+<div class="form-group row">
+<label for="codigo" class="col-sm-1 col-form-label">Base:</label>
+<div class="col-sm-11">
+<select [(ngModel)]="base" class="form-control">
+@for(bas of bases; track bas){
+<option value="{{bas.id}}">{{bas.nombre}}</option>
+}
+</select>
+</div>
+</div>
+<button class="btn btn-success" (click)="guardar()">Guardar</button>
