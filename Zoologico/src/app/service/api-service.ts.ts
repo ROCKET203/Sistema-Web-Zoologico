@@ -46,7 +46,7 @@ return this.http.post(this.apiUrl + "/nuevo_especie",datos).pipe(res=>res);
 
 
 guardarZoologico(datos: any): Observable<any>{
-return this.http.post(this.apiUrl + "/nuevo_zoologico",datos).pipe(res=>res);
+return this.http.post(this.apiUrl + "/nuevo_zoo",datos).pipe(res=>res);
 };
 
 

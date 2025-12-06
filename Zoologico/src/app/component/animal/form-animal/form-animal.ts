@@ -11,11 +11,11 @@ import { ApiServiceTs } from '../../../service/api-service.ts';
 
 export class FormAnimal implements OnInit {
 id:string='';
-id_especie:string='';
+idespecie:string='';
 sexo:string='';
 nacimiento:string='';
 pais:string='';
-id_zoologico:string='';
+idzoologico:string='';
 base:number=0;
 bases:any[]=[];
 codigo:string=''
@@ -37,12 +37,12 @@ error: (err: any) => {
 }
 guardar(){
 let datos={
-'id':this.id,
-'id_especie':this.id_especie,
+'identificacion':this.id,
+'idespecie':this.idespecie,
 'sexo':this.sexo,
 'nacimiento':this.nacimiento,
 'pais':this.pais,
-'id_zoologico':this.id_zoologico,
+'idzoologico':this.idzoologico,
 };
 this.ApiService.guardarAnimal (datos).subscribe({
 next: (result) => {

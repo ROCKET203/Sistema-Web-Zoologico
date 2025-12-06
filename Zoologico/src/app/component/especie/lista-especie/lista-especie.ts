@@ -5,7 +5,7 @@ import { ApiServiceTs } from '../../../service/api-service.ts';
 
 @Component({
   selector: 'app-lista-especie',
-  imports: [FormEspecie,ListaEspecie,Menu],
+  imports: [],
   templateUrl: './lista-especie.html',
   styleUrl: './lista-especie.css',
 })
